@@ -41,7 +41,6 @@ This code is designed to plug into the assignment runner that constructs `Proble
 2. Run the provided grader or input driver which will call `solve`.
 3. The solver respects `problem.time_limit_minutes` — it stops when the time budget elapses.
 
-> Note: If you want a CLI harness, add a small `main()` that reads JSON/problem file, constructs `ProblemData`, calls `solve()` and prints the `Solution`.
 
 ## Results & notes
 - The solver produces feasible solutions and improves them by repeated restarts and local search.
@@ -55,5 +54,4 @@ This code is designed to plug into the assignment runner that constructs `Proble
 - Track and log best objective per iteration so you can plot convergence.
 - Add unit tests for `evaluateSolution` and small fixed-instance sanity checks.
 
-## License
-Add the license you prefer (MIT recommended for student projects).
+
